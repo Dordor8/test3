@@ -516,23 +516,33 @@ More images </a>
 <div aria-labelledby="tab-title-reviews" class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel">
 
 <div class="image-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 10px;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 1" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 2" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 3" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 4" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 5" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 6" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 7" style="width: 100%; height: auto;">
-  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 8" style="width: 100%; height: auto;">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 1" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 2" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 3" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 4" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 5" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 6" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 7" class="image-item">
+  <img src="//cdn.shopify.com/s/files/1/0693/8283/collections/gallery_img_3_large.jpg?v=1554462766" alt="Image 8" class="image-item">
 </div>
 
 <style>
-.image-container img {
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.image-item {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+  transform: scale(1.1);
 }
 </style>
-
 
 </div>
 </div>
